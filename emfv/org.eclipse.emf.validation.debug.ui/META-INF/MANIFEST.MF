@@ -1,26 +1,28 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: org.eclipse.emf.validation.debug.ui;singleton:=true
+Bundle-SymbolicName: org.eclipse.ocl.examples.emf.validation.debug.ui;singleton:=true
 Bundle-Version: 0.0.1.qualifier
-Bundle-Activator: org.eclipse.emf.validation.debug.ui.ValidityUIPlugin$Implementation
+Bundle-Activator: org.eclipse.ocl.examples.emf.validation.debug.ui.ValidityUIPlugin$Implementation
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.validation.debug,
+ org.eclipse.ocl.examples.emf.validation.debug,
  org.eclipse.emf.edit.ui,
  org.eclipse.xtext.ui,
  org.eclipse.emf.ecore.edit,
  org.eclipse.jdt.annotation;bundle-version="1.1.0";resolution:=optional,
  org.eclipse.debug.core,
  org.eclipse.debug.ui,
- org.eclipse.ocl.examples.pivot,
- org.eclipse.ui.ide
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+ org.eclipse.ui.ide,
+ org.eclipse.ui.forms,
+ org.eclipse.search,
+ org.eclipse.equinox.bidi
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Import-Package: org.apache.commons.lang
-Export-Package: org.eclipse.emf.validation.debug.ui,
- org.eclipse.emf.validation.debug.ui.actions,
- org.eclipse.emf.validation.debug.ui.launching,
- org.eclipse.emf.validation.debug.ui.utils,
- org.eclipse.emf.validation.debug.ui.view
+Export-Package: org.eclipse.ocl.examples.emf.validation.debug.ui,
+ org.eclipse.ocl.examples.emf.validation.debug.ui.actions,
+ org.eclipse.ocl.examples.emf.validation.debug.ui.launching,
+ org.eclipse.ocl.examples.emf.validation.debug.ui.utils,
+ org.eclipse.ocl.examples.emf.validation.debug.ui.view

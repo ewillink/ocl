@@ -5,18 +5,18 @@
 	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
 	    <launchConfigurationType id="org.eclipse.ocl.examples.debug.launch.oclQuery"
 	        name="OCL Query"
-	        delegate="org.eclipse.ocl.examples.debug.launching.OCLQueryLaunchConfigurationDelegate"
+	        delegate="org.eclipse.ocl.examples.validity.debug.launching.OCLQueryLaunchConfigurationDelegate"
 	        modes="run, debug"/>
 	</extension>
-   <extension point="org.eclipse.emf.validation.debug.constraint_locator">
+   <extension point="org.eclipse.ocl.examples.emf.validation.debug.constraint_locator">
    		<locator metaclass="http://www.eclipse.org/ocl/3.1.0/Pivot"
-   			class="org.eclipse.ocl.examples.debug.locator.PivotConstraintLocator"/>
+   			class="org.eclipse.ocl.examples.validity.debug.locator.PivotConstraintLocator"/>
    		<locator metaclass="http://www.eclipse.org/uml2/2.0.0/UML"
-   			 class="org.eclipse.ocl.examples.debug.locator.UMLConstraintLocator"/>
+   			 class="org.eclipse.ocl.examples.validity.debug.locator.UMLConstraintLocator"/>
    		<locator metaclass="http://www.eclipse.org/uml2/3.0.0/UML"
-   			 class="org.eclipse.ocl.examples.debug.locator.UMLConstraintLocator"/>
+   			 class="org.eclipse.ocl.examples.validity.debug.locator.UMLConstraintLocator"/>
    		<locator metaclass="http://www.eclipse.org/uml2/4.0.0/UML"
-   			 class="org.eclipse.ocl.examples.debug.locator.UMLConstraintLocator"/>
+   			 class="org.eclipse.ocl.examples.validity.debug.locator.UMLConstraintLocator"/>
    </extension>
 
 </plugin>

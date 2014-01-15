@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.emf.validation.debug_0.0.1.201305081726.jar" id="org.eclipse.emf.validation.debug" version="0.0.1.201305081726">
+   <feature url="features/org.eclipse.ocl.examples.emf.validation.debug_0.0.1.201305081726.jar" id="org.eclipse.ocl.examples.emf.validation.debug" version="0.0.1.201305081726">
       <category name="ValidityView"/>
    </feature>
    <category-def name="ValidityView" label="Validity View">

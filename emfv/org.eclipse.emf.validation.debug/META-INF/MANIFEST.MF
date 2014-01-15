@@ -1,21 +1,24 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: org.eclipse.emf.validation.debug;singleton:=true
+Bundle-SymbolicName: org.eclipse.ocl.examples.emf.validation.debug;singleton:=true
 Bundle-Version: 0.0.1.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-Activator: org.eclipse.emf.validation.debug.plugin.ValidityPlugin$Implementation
+Bundle-Activator: org.eclipse.ocl.examples.emf.validation.debug.plugin.ValidityPlugin$Implementation
 Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.edit,
  org.eclipse.debug.core
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Export-Package: org.eclipse.emf.validation.debug,
- org.eclipse.emf.validation.debug.launching,
- org.eclipse.emf.validation.debug.locator,
- org.eclipse.emf.validation.debug.validity,
- org.eclipse.emf.validation.debug.validity.impl,
- org.eclipse.emf.validation.debug.validity.util
+Export-Package: org.eclipse.ocl.examples.emf.validation.debug,
+ org.eclipse.ocl.examples.emf.validation.debug.launching,
+ org.eclipse.ocl.examples.emf.validation.debug.locator,
+ org.eclipse.ocl.examples.emf.validation.debug.validity,
+ org.eclipse.ocl.examples.emf.validation.debug.validity.impl,
+ org.eclipse.ocl.examples.emf.validation.debug.validity.markers,
+ org.eclipse.ocl.examples.emf.validation.debug.validity.util,
+ org.eclipse.ocl.examples.emf.validation.export
 Bundle-ActivationPolicy: lazy
 Import-Package: org.apache.log4j

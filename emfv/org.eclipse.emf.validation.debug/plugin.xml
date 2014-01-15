@@ -7,27 +7,28 @@
 <plugin>
    <extension-point id="constraint_locator" name="constraint_locator" schema="schema/constraint_locator.exsd"/>
 
-   <extension point="org.eclipse.emf.validation.debug.constraint_locator">
+   <extension-point id="validity_exporter" name="Validity Results Exporter" schema="schema/validity_exporter.exsd"/>
+   <extension point="org.eclipse.ocl.examples.emf.validation.debug.constraint_locator">
    		<locator metaclass="http://www.eclipse.org/emf/2002/Ecore"
-   			class="org.eclipse.emf.validation.debug.locator.EClassConstraintLocator"/>
+   			class="org.eclipse.ocl.examples.emf.validation.debug.locator.EClassConstraintLocator"/>
    		<locator metaclass="http://www.eclipse.org/emf/2002/Ecore"
-   			 class="org.eclipse.emf.validation.debug.locator.EClassifierConstraintLocator"/>
+   			 class="org.eclipse.ocl.examples.emf.validation.debug.locator.EClassifierConstraintLocator"/>
    		<locator metaclass="http://www.eclipse.org/emf/2002/Ecore"
-   			 class="org.eclipse.emf.validation.debug.locator.EValidatorConstraintLocator"/>
+   			 class="org.eclipse.ocl.examples.emf.validation.debug.locator.EValidatorConstraintLocator"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated Validation -->
       <package
             uri="http://www.eclipse.org/emf/validation/2013/Validity"
-            class="org.eclipse.emf.validation.debug.validity.ValidityPackage"
+            class="org.eclipse.ocl.examples.emf.validation.debug.validity.ValidityPackage"
             genModel="model/Validity.genmodel"/>
    </extension>
    
    <extension point="org.eclipse.debug.core.launchConfigurationTypes">
       <launchConfigurationType
-            id="org.eclipse.emf.validation.debug.launchConfigurationType"
-            delegate="org.eclipse.emf.validation.debug.launching.ValidityLaunchDelegate"
+            id="org.eclipse.ocl.examples.emf.validation.debug.launchConfigurationType"
+            delegate="org.eclipse.ocl.examples.emf.validation.debug.launching.ValidityLaunchConfigurationDelegate"
             modes="run, debug"
             name="Model Validation">
       </launchConfigurationType>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Schema file written by PDE -->
-<schema targetNamespace="org.eclipse.emf.validation.debug" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema targetNamespace="org.eclipse.ocl.examples.emf.validation.debug" xmlns="http://www.w3.org/2001/XMLSchema">
 <annotation>
       <appinfo>
-         <meta.schema plugin="org.eclipse.emf.validation.debug" id="constraint_locator" name="constraint_locator"/>
+         <meta.schema plugin="org.eclipse.ocl.examples.emf.validation.debug" id="constraint_locator" name="constraint_locator"/>
       </appinfo>
       <documentation>
          A ConstaintLocator provides a mechanism to locate Constraints applicable to an EObject. Each ConstraintLocator provoides an alternate location algorithm.
@@ -57,11 +57,11 @@
          <attribute name="class" type="string" use="required">
             <annotation>
                <documentation>
-                  A fully qualified name of the Java class implementing &lt;samp&gt;org.eclipse.emf.validation.debug.locator.ConstraintLocator
+                  A fully qualified name of the Java class implementing &lt;samp&gt;org.eclipse.ocl.examples.emf.validation.debug.locator.ConstraintLocator
 &lt;/samp&gt;.
                </documentation>
                <appinfo>
-                  <meta.attribute kind="java" basedOn=":org.eclipse.emf.validation.debug.locator.ConstraintLocator"/>
+                  <meta.attribute kind="java" basedOn=":org.eclipse.ocl.examples.emf.validation.debug.locator.ConstraintLocator"/>
                </appinfo>
             </annotation>
          </attribute>

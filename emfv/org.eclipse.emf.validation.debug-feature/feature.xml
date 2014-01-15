@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.emf.validation.debug"
+      id="org.eclipse.ocl.examples.emf.validation.debug"
       label="%featureName"
       version="0.0.1.qualifier"
       provider-name="%providerName"
@@ -16,21 +16,21 @@
    </copyright>
 
    <plugin
-         id="org.eclipse.emf.validation.debug"
+         id="org.eclipse.ocl.examples.emf.validation.debug"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.emf.validation.debug.ui"
+         id="org.eclipse.ocl.examples.emf.validation.debug.ui"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.ocl.examples.debug"
+         id="org.eclipse.ocl.examples.validity.debug"
          download-size="0"
          install-size="0"
          version="0.0.0"
